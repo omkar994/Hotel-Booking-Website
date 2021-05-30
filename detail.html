@@ -5,12 +5,30 @@
     <body>
         <div>
             <header>
-                <img src="G:/Hotel Booking Website/assests/images/logo.png" alt="logo" height="200px" width="150px">
+                <a href="index.html"><img src="G:/Hotel Booking Website/assests/images/logo.png" alt="logo" height="150px" width="200px"></a>
                 <span><a href="login.html">Login</a></span>
             </header>
             <content>
-                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt=""><br>
-                <a href="payment.html">Book Now</a>
+                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt=""><br><br>
+                <div>
+                    <form action="payment.html" method="GET">
+                        <label for="adult">Adult</label>
+                        <input type="number" id="adult" min="1"><br>
+
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required><br>
+
+                        <label for="fromDate">From Date</label>
+                        <input type="date" id="fromDate" required><br>
+
+                        <label for="toDate">To Date</label>
+                        <input type="date" id="toDate"><br>
+
+                        <label for="total">Total</label>
+                        <input type="number" id="total" readonly>
+                        <button type="submit">Book Now</button>
+                    </form>
+                </div>
                 <h2>Radisson Blu Hotel</h2>
                 <p>Rating</p>
                 <p>5 star</p>
@@ -27,7 +45,7 @@
                      Donec lacinia condimentum ante sit amet malesuada. Nulla in ullamcorper mi. Fusce placerat ligula vitae sapien imperdiet tincidunt</p>
             </content>
             <footer>
-                <div><a href="contact.html" target="_blank">Contact Us</a></div>
+                <div><a href="contact.html" target="_self">Contact Us</a></div>
                 <a href="http://facebook.in/" target="_blank"><img src="G:/Hotel Booking Website/assests/images/facebook.png" alt="" width="20px" height="20px"></a>
                 <a href="https://www.instagram.com/" target="_blank"><img src="G:/Hotel Booking Website/assests/images/instagram.png" alt="" width="20px" height="20px"></a>
                 <a href="https://twitter.com/" target="_blank"><img src="G:/Hotel Booking Website/assests/images/twitter.png" alt="" width="20px" height="20px"></a>
