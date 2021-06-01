@@ -1,0 +1,20 @@
+body{
+    width: 100%;
+    height: 100%;
+}
+#logo{
+    width: 60px;
+    height: 60px;
+}
+#hotelImg{
+    width: 500px;
+    height: 500px;
+}
+.city{
+    width: 150px;
+    height: 150px;
+}
+.socialLogo{
+    width: 22px;
+    height: 20px;
+}
