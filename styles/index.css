@@ -1,7 +1,10 @@
 body{
-    width: 100%;
+   
     height: 100%;
+    margin:0;
+    background-color: #e0e0e0;
 }
+
 #logo{
     width: 60px;
     height: 60px;
@@ -9,8 +12,25 @@ body{
 .city{
     width: 150px;
     height: 150px;
+    padding: 4%;
+    border-radius: 25%;
 }
 .socialLogo{
     width: 22px;
     height: 20px;
+}
+header{
+    background-color: rosybrown;
+}
+#backgroungImage{
+    height: 380px;
+    width:100%;
+    position:relative;
+}
+#cityCard{
+    margin-right:15%;
+    margin-left:15%;
+}
+footer{
+    background-color: rosybrown;
 }
