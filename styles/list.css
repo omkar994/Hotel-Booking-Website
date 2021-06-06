@@ -2,12 +2,50 @@ body{
     width: 100%;
     margin: 0;
     background-color: #e0e0e0;
+    font-family: Ubuntu, sans-serif;
 }
 header{
+    
     background-color: rosybrown;
+    position: fixed; 
+    top: 0;
+    width: 100%;
 }
 footer{
     background-color: rosybrown;
+    position: fixed; 
+    bottom: 0;
+    width: 100%;  
+}
+content{
+    
+    margin-top: 10%;
+    }
+#contact{
+    color: black;
+    margin : 15px 10px 5px 10px ;
+
+}
+#mapView{
+    display: none;
+}
+#socialLogos{
+    margin : 8px 2.5px 2.5px 1420px ;
+
+}
+#copyright{
+    margin-left: 43%;
+    margin-bottom: 0;
+    font-size: 13px;
+}
+a:link {
+    text-decoration: none;
+  }
+#login{
+    position: absolute;
+    left: 95.8%;
+    top: 21px;
+    color: black;;
 }
 #logo{
     width: 60px;
@@ -26,5 +64,7 @@ footer{
     width: 40%;
     background-color: rgb(132,136,139);
     margin: 2%;
+    
+    float: left;
 
 }

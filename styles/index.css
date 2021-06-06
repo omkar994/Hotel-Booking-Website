@@ -3,7 +3,32 @@ body{
     height: 100%;
     margin:0;
     background-color: #e0e0e0;
+    font-family: Ubuntu, sans-serif;
 }
+#login{
+    position: absolute;
+    left: 95.8%;
+    top: 21px;
+    color: black;
+}
+#contact{
+    color: black;
+    margin : 15px 10px 5px 10px ;
+
+}
+#socialLogos{
+   
+    margin : 8px 2.5px 2.5px 1420px ;
+
+}
+#copyright{
+    margin-left: 43%;
+    margin-bottom: 0;
+    font-size: 13px;
+}
+a:link {
+    text-decoration: none;
+  }
 
 #logo{
     width: 60px;
@@ -19,18 +44,43 @@ body{
     width: 22px;
     height: 20px;
 }
+
+#citySearch{
+    position : absolute;
+    left : 40%;
+    top:29%;
+    z-index: 1;
+    appearance: none;
+    padding: 12px;
+    width: 350px;
+    height: 28px;
+
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
 header{
+    
     background-color: rosybrown;
+   
+    
 }
 #backgroungImage{
     height: 380px;
     width:100%;
     position:relative;
+   
 }
 #cityCard{
     margin-right:15%;
     margin-left:15%;
+
 }
 footer{
     background-color: rosybrown;
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    
+
 }
