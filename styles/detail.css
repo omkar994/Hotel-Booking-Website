@@ -70,11 +70,14 @@ a:link {
     width: 60px;
     height: 60px;
 }
-#hotelImg{
+.hotelImg{
     /* width: 500px; */
     height: 350px;
     margin: 2% 4% 0% 20%;
 }
+.checked {
+    color: orange;
+  }
 #form{
     margin: 2% 15% 0% 10%;
     display: flex;

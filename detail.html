@@ -14,6 +14,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/detail.css">
 </head>
 
@@ -22,7 +23,7 @@
         <header>
             <img src="G:/Hotel Booking Website/assests/images/logo.png" alt="logo" id="logo">
             <div id="login"><button class="btn btn-light" data-target="#loginModal" data-toggle="modal">Login</button>
-            </div> 
+            </div>
         </header>
         <div class="modal " id="loginModal">
             <div class="modal-dialog">
@@ -51,8 +52,36 @@
 
             <div class="mainContent">
                 <div class="imageContent">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt=""
-                        id="hotelImg">
+                    <div class="carousel slide" id="mySlider" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                                    alt="" class="hotelImg">
+                            </div>
+
+                            <div class="carousel-item ">
+                                <img src="https://media-cdn.tripadvisor.com/media/photo-o/01/fa/51/70/r-the-spa.jpg"
+                                    alt="" class="hotelImg">
+                            </div>
+
+                            <div class="carousel-item ">
+                                <img src="https://media-cdn.tripadvisor.com/media/photo-w/0e/b2/64/3f/radisson-blu-plaza-delhi.jpg"
+                                    alt="" class="hotelImg">
+                            </div>
+                        </div>
+                        <ul class="carousel-indicators">
+                            <li data-target="#mySlider" data-slide-to="0" class="active"></li>
+                            <li data-target="#mySlider" data-slide-to="1" ></li>
+                            <li data-target="#mySlider" data-slide-to="2" ></li>
+                        </ul>
+                        <a href="#mySlider" data-slide="prev" class="carousel-control-prev">
+                            <span class="carousel-control-prev-icon" style="background-color: rosybrown;"></span>
+                        </a>
+                        
+                        <a href="#mySlider" data-slide="next" class="carousel-control-next">
+                            <span class="carousel-control-next-icon" style="background-color: rosybrown;"></span>
+                        </a>
+                    </div>
                 </div>
                 <div id="form">
                     <form action="payment.html" method="GET">
@@ -70,7 +99,8 @@
                         <br><br>
                         <label for="total">Total</label>&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp
                         <input type="number" id="total" name="total" readonly><br><br><br>
-                        <button type="submit" class="btn btn-success bookSuccess" style="margin-left: 40%;color:green; background-color:#e0e0e0;" >Book Now</button>
+                        <button type="submit" class="btn btn-success bookSuccess"
+                            style="margin-left: 40%;color:green; background-color:#e0e0e0;">Book Now</button>
                     </form>
                 </div>
             </div>
@@ -79,7 +109,11 @@
             <div id="hotelDescription">
                 <h2>Radisson Blu Hotel</h2>
                 <p style="font-family: cursive;">Rating</p>
-                <p>5 star</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
                 <p style="font-family: cursive;"> AMENITIES</p>
                 <ul>
                     <li>Room Service</li>
