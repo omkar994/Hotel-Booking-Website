@@ -20,36 +20,8 @@
 
 <body>
     <div id="parentDiv">
-        <header>
-            <img src="G:/Hotel Booking Website/assests/images/logo.png" alt="logo" id="logo">
-            <div>
-                <div id="login"><button class="btn btn-light" data-target="#loginModal"
-                        data-toggle="modal">Login</button></div>
-                <div class="modal " id="loginModal">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h3 class="text-primary">Login</h3>
-                                <button type="button" class="close" data-dismiss="modal"> &times;</button>
-                            </div>
-                            <div class="modal-body">
-                                <form action="index.html" method="GET" accept-charset="UTF-8">
-                                    <label for="username">Username:</label>
-                                    <input type="text" id="username" placeholder="Enter Username" name="username"
-                                        autocomplete="off" required><br>
-                                    <label for="password">Password:</label>
-                                    <input type="password" id="password" placeholder="Enter Password" name="passwd"
-                                        required><br>
-                                    <input type="submit">
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
 
-
+        <div id="headerTemplate"></div>
         <content id="wrapper">
             <img src="https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg" id="backgroungImage"
                 alt="">
@@ -92,46 +64,49 @@
                 </div>
             </div>
             <br>
-            <div id="cityCard">
+            <div id="viewHide">
+                <div id="cityCard2">
 
-                <div class="container">
-                    <a href="list.html"><img
-                            src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg" alt=""
+                    <div class="container">
+                        <a href="list.html"><img
+                                src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg"
+                                alt="" class="image">
+                            <div class="overlay">
+                                <div class="text">Chennai</div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <div class="container">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg" alt=""
                             class="image">
                         <div class="overlay">
-                            <div class="text">Chennai</div>
+                            <div class="text">Agra</div>
                         </div>
-                    </a>
-                </div>
-
-
-                <div class="container">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg" alt="" class="image">
-                    <div class="overlay">
-                        <div class="text">Agra</div>
                     </div>
-                </div>
 
-                <div class="container">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg" alt=""
-                        class="image">
-                    <div class="overlay">
-                        <div class="text">Jaipur</div>
+                    <div class="container">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg"
+                            alt="" class="image">
+                        <div class="overlay">
+                            <div class="text">Jaipur</div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="container">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg
+                    <div class="container">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg
 
-                    " alt=""
-                        class="image">
-                    <div class="overlay">
-                        <div class="text">Bengaluru</div>
+                    " alt="" class="image">
+                        <div class="overlay">
+                            <div class="text">Bengaluru</div>
+                        </div>
                     </div>
                 </div>
             </div>
             <br>
-            <a href="#" style="margin-left: 43%; color:black;"><button type="button" class="btn btn-secondary">View
+            <a style="margin-left: 43%; color:black;"><button type="button" class="btn btn-secondary"
+                    id="viewMoreBtn">View
                     More</button></a>
 
         </Content>
@@ -157,27 +132,13 @@
             </div>
 
         </div>
+        <div id="footerTemplate"></div>
 
-        <footer>
-            <!---->
-            <div id="contact">
-                <div><button type="button" class="btn btn-primary" data-target="#contactModal"
-                        data-toggle="modal">Contact Us</button>
-                </div>
-            </div>
-            <!---->
-            <div id="copyright"><span>&#169;</span> 2020 ROOM SEARCH PVT LTD</div>
-            <div id="socialLogos">
-                <a href="http://facebook.in/" target="_blank"><img
-                        src="G:/Hotel Booking Website/assests/images/facebook.png" alt="" class="socialLogo"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img
-                        src="G:/Hotel Booking Website/assests/images/instagram.png" alt="" class="socialLogo"></a>
-                <a href="https://twitter.com/" target="_blank"><img
-                        src="G:/Hotel Booking Website/assests/images/twitter.png" alt="" class="socialLogo"></a>
-            </div>
-
-        </footer>
     </div>
+
+    <script src="scripts/common.js"></script>
+    <script src="scripts/index.js"></script>
+
 </body>
 
 </html>

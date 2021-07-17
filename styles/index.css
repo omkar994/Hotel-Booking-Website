@@ -78,6 +78,18 @@ header{
     justify-content: space-between;
 
 }
+#cityCard2{
+    display: flex;
+    margin-right:15%;
+    margin-left:15%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+}
+#viewHide{
+    display: none;
+}
 .container {
     position: relative;
     width: 50%;
