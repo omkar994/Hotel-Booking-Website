@@ -66,24 +66,57 @@ a:link {
     width: 60px;
     height: 60px;
 }
-.hotelImg{
-    width: 250px;
-    height: 200px;
-}
+
 .socialLogo{
     width: 22px;
     height: 20px;
 }
 
-.hotelListImage{
+#list-view{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#list-view img{
+  width: 250px;
+  height: 250px;
+}
+
+#list-view > div{
+  margin: 4%;
+  background-color: lightgrey;
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: row;
+}
+
+#list-view > div:hover{
+  background-color: rosybrown;
+}
+
+.image{
     width: 40%;
     background-color: lightgray;
     margin: 0 5% 5% 5%;
+   
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+  
 }
 
-.hotelListImage:hover{
+
+
+.image:hover{
     background-color: rosybrown;
 }
+
+.details{
+  flex: 100%;
+  float:left;
+  padding-left: 2%;
+  padding-top: 2%;
+}
+
+

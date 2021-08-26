@@ -24,3 +24,9 @@ document.getElementById('fromDate').addEventListener('change', () => {
 document.getElementById('toDate').addEventListener('change', () => {
     calcaulateTotalprice();
 });
+
+function getHotelFromURL() {
+    let url = location.href;
+    let params = (new URL(url)).searchParams;
+    return params.get('id');
+  }
