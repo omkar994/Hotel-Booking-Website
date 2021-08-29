@@ -27,7 +27,7 @@ async function getHotels() {
 let hotels;
 async function renderHotels() {
   let response = await getHotels();
-  //displayLoader(false);
+  displayLoader(false);
   hotels = response.data;
   //let map = initMap();
   let noOfHotels = hotels.length;

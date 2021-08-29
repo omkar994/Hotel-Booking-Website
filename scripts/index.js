@@ -1,6 +1,7 @@
 let btn1=document.getElementById("viewMoreBtn");
 console.log
 let state=0;
+displayLoader(false);
 btn1.addEventListener("click", function(){
     if(state==0){
     document.getElementById("viewHide").style.display="block";
